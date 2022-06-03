@@ -1,0 +1,507 @@
+/*this file is url: http://127.0.0.1:8000/static/styles.css */
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    /*background-color: #ffffff;*/
+    background: linear-gradient(to left, #dcdcdc, white, #dcdcdc);
+    /*background-image: url("pics/H.jpg");*/
+}
+footer{
+    margin-top: 100px;
+    height: 300px;
+    width: 100%;
+    background-color: #734a5b;
+    border-top:8px solid #fdc76c;
+}
+
+div {
+    /*border: 1px solid black;*/
+}
+.navbar{
+    background-color: white;
+    display: flex;
+    height: 80px;
+    box-shadow: 0px 0px 10px rgb(101, 101, 101);
+    border-bottom:8px solid #734a5b;
+}
+
+.LogoDIV, .home, .about, .clients, .contacts, .AskButtonNavbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20%;
+}
+
+.home, .about, .clients, .contacts{
+    font-family: Myriad Pro;
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    transition-property: color;
+}
+.home, .about, .clients, .contacts{
+    transition-property: background;
+}
+
+.home:hover, .about:hover, .clients:hover, .contacts:hover, a:hover{
+    background-color: #734a5b;
+    color: white;
+}
+
+.LogoDIV{
+    overflow: hidden;
+    width: 300px;
+}
+.LogoNavBar{
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+.ButtonAsk{
+    padding: 10px 40px 10px 40px;
+    color: white;
+    background: #512084;
+    font-family: Arial;
+    font-size: 15px;
+    border-radius: 2.5px;
+    border: none;
+    transition-property: background-color, padding, font-size;
+    text-decoration: none;
+    text-align: center;
+}
+.ButtonAsk:hover{
+    background-color: #f19f0e;
+    padding: 12px 42px 12px 42px;
+    font-size: 16px;
+}
+
+/*AboutPage*/
+.AboutMenuDiv{
+    display: flex;
+    background-image: url("pics/office.jpg");
+    background-size: 50% 100%;
+    height: 800px;
+    width: 100%;
+    position: fixed;
+    z-index: -1;
+    opacity: 30%;
+
+}
+.AboutMenu{
+    margin: 250px 0 0 1100px;
+    border-top:20px solid #fdc76c;
+    border-bottom:20px solid #593540;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    position: absolute;
+    z-index: 2;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgb(51, 50, 50);
+    background: #ffffff;
+    opacity: 90%;
+}
+
+.MainAboutDiv{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+
+.EmployeeFomrs{
+    display: flex;
+    justify-content: center;
+    margin: 70px 550px 0 550px;
+    background-color: white;
+    padding: 20px 20px 20px 20px;
+    border-top:20px solid #fdc76c;
+    border-bottom:20px solid #593540;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    box-shadow: 0px -5px 10px rgb(155, 155, 155);
+
+}
+.LogoAbout{
+    background: linear-gradient(to right, #e1e1e1, white, #e1e1e1);
+    padding: 50px 0 50px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 880px;
+    box-shadow: 0px 0px 10px rgb(155, 155, 155);
+    opacity: 85%;
+
+}
+.LogoP{
+    height: 45%;
+    width: 45%;
+}
+.AboutTeamDiv{
+    margin-left: 600px;
+    margin-right: 600px;
+}
+
+.AboutTextDiv{
+    display: inline-flex;
+    margin: 40px 500px 50px 500px;
+}
+.AboutText{
+    background-color: white;
+    padding: 20px 20px 20px 20px;
+    border-top:20px solid #fdc76c;
+    border-bottom:20px solid #593540;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    box-shadow: 0px 5px 10px rgb(68, 68, 68);
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: normal;
+    text-align: justify;
+    line-height: 30px;
+    font-style: italic;
+    opacity: 90%;
+}
+
+.PicSection{
+    align-self: center;
+    border-radius: 50%;
+    background-color: white;
+    height: 226px;
+    width: 226px;
+    overflow: hidden;
+}
+.InfoSection{
+    height: 300px;
+    width: 600px;
+}
+.EmploeeName, .EmployeeInfo{
+    margin-left: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: normal;
+    text-align: justify;
+    line-height: 30px;
+}
+.EmploeeName{
+    font-size: 28px;
+    display: inline-flex;
+}
+
+.TeamHeder{
+    color: #b6a2ab;
+    text-align: center;
+    margin: 20px 0 0 0;
+    font-size: 50px;
+    font-family: Arial;
+}
+
+.AriasDiv{
+    border-top:60px solid #fdc76c;
+    border-bottom:60px solid #593540;
+    position: relative;
+    background-image: url("pics/lawyer.jpg");
+    display: inline-flex;
+    /*background-size: cover;*/
+    background-size: 90% 100%;
+    background-position: 10% 0;
+    width: 100%;
+    height: 1100px;
+    opacity: 95%;
+}
+.AriasHeder{
+    position: absolute;
+    z-index: 1;
+    color: white;
+    margin: 40px 0 0 650px;
+    font-size: 90px;
+}
+
+.InfoArias{
+    position: absolute;
+    margin: 350px 0 0 950px;
+    padding: 30px 30px 30px 30px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    background-color: white;
+    border-top:20px solid #fdc76c;
+    border-bottom:20px solid #593540;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    box-shadow: -7px 20px 50px rgb(0, 0, 0);
+}
+
+.ListArias{
+    margin-left: 40px;
+    line-height: 80px;
+    font-size: 30px;
+}
+
+/*contacts*/
+
+.MainCont{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+
+}
+.ContactsBackground, .AdressDiv{
+    position: absolute;
+}
+.ContactsBackground{
+    z-index: 0;
+    width: 100%;
+    height: 800px;
+    opacity: 30%;
+    background-size: 50% 100%;
+    background-image: url("pics/office.jpg");
+}
+.AdressDiv{
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Adres{
+    align-self: center;
+    display: inline-flex;
+    width: 790px;
+    height: 170px;
+    background-color: white;
+    margin: 80px 0 50px 0;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgb(213, 213, 213);
+}
+iframe{
+    /*background: white;*/
+    align-self: center;
+    box-shadow: 0px 0px 10px rgb(155, 154, 154);
+}
+.TextAdress{
+    align-self: center;
+    margin-left: 15px;
+    list-style: none;
+    text-align: justify;
+    font-size: 20px;
+    font-family: Arial;
+    line-height: 35px;
+}
+span{
+    font-weight: bold;
+}
+
+/*clients*/
+/*consultations*/
+
+.MainClients{
+    display:flex;
+    justify-content: center;
+    align-content: center;
+    position: relative;
+
+}
+.ClientsBackground, .ClientsDiv{
+    position: absolute;
+}
+.ClientsBackground{
+    z-index: 0;
+    width: 100%;
+    height: 800px;
+    opacity: 30%;
+    background-size: 110% 180%;
+    background-position: 0 70%;
+    background-image: url("pics/new-clients.jpg");
+}
+.ClientsDiv{
+    display: inline-flex;
+    z-index: 1;
+    margin-top: 100px;
+    padding: 20px 40px 20px 40px;
+    border-top:15px solid #fdc76c;
+    border-bottom:20px solid #593540;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    background-color: rgba(255, 255, 255, 0.6);
+    box-shadow: 0px 2px 5px rgb(89, 89, 89);
+}
+.FormConsultation{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: Arial;
+    font-size: 18px;
+}
+input[type=text], input[type=email], input[type=number], select{
+    width: 500px;
+    height: 40px;
+    border: 2px solid #ccc;
+    background-color: #f8f8f8;
+    border-radius: 4px;
+}
+textarea{
+    width: 500px;
+    height: 150px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    background-color: #f8f8f8;
+    resize: none;
+}
+label[for=id_image]{
+    margin-top: 30px;
+}
+input[type=file]{
+    margin-bottom: 20px;
+}
+
+.SendButton {
+    margin-top: 40px;
+    cursor: pointer;
+    color: #ffffff;
+    font-size: 15px;
+    width: 120px;
+    height: 50px;
+    border-bottom-right-radius: 10px;
+    border-top-left-radius: 10px;
+    background-color: #04AA6D;
+    align-self: flex-end;
+    border: none;
+    transition-property: background-color, width, height, font-weight;
+}
+
+input[type=text], input[type=email], input[type=number], select, textarea{
+    transition-property: border;
+}
+input[type=text]:hover, input[type=email]:hover, input[type=number]:hover, select:hover, textarea:hover{
+    border-color: #f19f0e;
+}
+
+.SendButton:hover{
+    background-color: #f19f0e;
+    width: 125px;
+    height: 55px;
+    font-weight: bold;
+}
+
+/*home*/
+.Main{
+    /*margin-top: 20px;*/
+    position: relative;
+    display: flex;
+}
+.WallPaperDiv{
+    position: fixed;
+    background-image: url("pics/nullxnull.jpg");
+    opacity: 90%;
+    background-position: center;
+    height: 900px;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.ServiceDiv{
+    margin: 130px 0 0 1100px;
+    border-top:20px solid #fdc76c;
+    border-bottom:20px solid #593540;
+    border-bottom-right-radius: 40px;
+    border-top-left-radius: 40px;
+    position: absolute;
+    z-index: 2;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0px 0px 10px rgb(51, 50, 50);
+    background: #ffffff;
+    opacity: 93%;
+}
+
+.ServiceHedder{
+    border-bottom-right-radius: 20px;
+    border-top-left-radius: 20px;
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: lighter;
+    font-size: 30px;
+    line-height: 50px;
+    padding: 20px 35px 20px 35px;
+    color: black;
+}
+
+.ServiceInformationDiv{
+    position: absolute;
+    z-index: 1;
+    margin-top: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to left, #1f1616, #2d1a1a, #1f1616);
+    /*background-color: #2d1a1a;*/
+    /*background-color: #8c4f5b;*/
+    opacity: 93%;
+}
+.LineSepareter{
+    width: 100%;
+    height: 150px;
+    background: linear-gradient(to left, #cbcbcb, white, #cbcbcb);
+    border-bottom: 30px solid #fdc76c;
+}
+.ServiceInformation{
+    margin: 20px 500px 60px 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 20px 20px 20px;
+    text-align: justify;
+    border-radius: 10px;
+    /*box-shadow: 0px 2px 5px rgb(54, 54, 54);*/
+
+}
+
+.InformationText{
+    font-family: Arial;
+    font-weight: lighter;
+    font-style: italic;
+    font-size: 25px;
+    line-height: 40px;
+    color: #a8a8a8;
+}
+.HeaderServ{
+    display: inline-flex;
+    margin-top: 80px;
+    margin-bottom: 20px;
+    /*justify-content: center;*/
+    align-items: center;
+    height: 50px;
+    width: 49%;
+    font-size: 40px;
+    font-family: Arial;
+    color: white;
+}
+.ButtonUp{
+    border-top-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 5px solid #e5e5e5;
+    font-size: 20px;
+    margin-top: 60px;
+    color: #a8a8a8;
+    font-family: Arial;
+    text-decoration: none;
+    background-color: #4b2634;
+    padding: 20px 30px 20px 30px;
+    transition-property: background-color, font-size;
+}
+.ButtonUp:hover{
+    background-color: #f19f0e;
+    font-size: 23px;
+}

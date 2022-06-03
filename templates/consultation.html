@@ -1,0 +1,20 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="MainClients">
+
+        <div class="ClientsBackground"></div>
+
+        <div class="ClientsDiv">
+            <form class="FormConsultation" method="post" enctype="multipart/form-data" action="{% url 'consultation' %}"> {% csrf_token %}
+                {{ consultations_form }}
+                <button class="SendButton">ИЗПРАТИ</button>
+            </form>
+        </div>
+
+
+    </div>
+
+
+{% endblock %}

@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Juleva&Avramov</title>
+    <link rel="stylesheet" href="{% static 'styles.css' %}">
+</head>
+
+<body>
+
+    <div class="navbar">
+
+        <div class="LogoDIV">
+            <img src="{% static 'pics/logo.png' %}" alt="Logo Pic" class="LogoNavBar">
+        </div>
+
+        <a href="{% url 'home' %}" class="home">НАЧАЛО</a>
+
+        <a href="{% url 'about' %}" class="about">ЗА НАС</a>
+
+        <a href="{% url 'contacts' %}" class="contacts">КОНТАКТИ</a>
+
+        <a href="{% url 'clients' %}" class="clients">КЛИЕНТИ</a>
+
+        <div class="AskButtonNavbar">
+            <a href="{% url 'consultation' %}" class="ButtonAsk">КОНСУЛТАЦИИ</a>
+{#            <button type="button" class="ButtonAsk" onclick="">КОНСУЛТАЦИИ</button>#}
+        </div>
+
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+
+</body>
+
+{#<footer></footer>#}
+
+
+</html>

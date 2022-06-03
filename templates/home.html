@@ -1,0 +1,31 @@
+{% extends 'index.html' %}
+{% load static %}
+{% block content %}
+
+    <div class="Main">
+
+        <div class="WallPaperDiv"></div>
+
+        <div class="ServiceDiv">
+            {% for serv in service %}
+                <a href="#{{ serv.service }}" class="ServiceHedder">{{ serv.service }}</a>
+            {% endfor %}
+        </div>
+
+    </div>
+
+    <div class="ServiceInformationDiv">
+        {% for serv in service %}
+            <div class="LineSepareter"></div>
+            <div class="HeaderServ"><h3>{{ serv.service }}</h3></div>
+            <div class="ServiceInformation">
+                <p class="InformationText" id="{{ serv.service }}">{{ serv.information }}</p>
+                <a href="{% url 'home' %}" class="ButtonUp">НАЧАЛО</a>
+            </div>
+
+        {% endfor %}
+    </div>
+
+
+
+{% endblock %}
